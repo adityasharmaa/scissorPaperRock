@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounds"
+    android:orientation="vertical"
+    tools:context="com.example.adi.scissor_paper_rock.MainActivity">
+
+
+        <TextView
+            android:id="@+id/userScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00"
+            android:textColor="#000"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="80dp"
+            android:textSize="35dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TURNS:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_marginStart="5dp"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/turn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginStart="60dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCORE"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/textView2"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="40dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginStart="70dp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/sciss" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCORE"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="227dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_marginStart="240dp"
+                android:layout_marginTop="60dp"
+                android:textColor="#000"
+                android:textSize="35dp" />
+
+    <ImageView
+        android:id="@+id/comImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/scissors" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMP"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginStart="230dp"
+                android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO SCISSOR-PAPER-ROCK"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:id="@+id/result" />
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="SCISSORS"
+        android:id="@+id/scissor"
+        android:background="@drawable/wooden"
+        android:textColor="#000"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/paper"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/wooden"
+        android:text="PAPER"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/rock"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/wooden"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="245dp"
+        android:text="ROCK"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/wooden"
+        android:onClick="reset"
+        android:text="reset"
+        android:textStyle="bold" />
+
+</RelativeLayout>

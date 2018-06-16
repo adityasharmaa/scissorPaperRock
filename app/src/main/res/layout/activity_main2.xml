@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounds"
+    tools:context="com.example.adi.scissor_paper_rock.Main2Activity">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Scissor-paper-rock.Rules to play this game are as follows:\n\n1.Select one of the options from scissors/paper/rock.\n2.You will get total 10 turns in a series.\n3.For each turn you win or lose you get +10 or -5 respectively.\n4.The higher scorer after 10 turns will win a game.5.You can reset the game anytime you want.\n\nBefore you start enter your name in the space provided below."
+        android:layout_marginStart="18dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME :"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:textColor="#000"
+        android:layout_marginTop="336dp"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="323dp"
+         />
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name"
+        android:layout_margin="30dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/wooden"
+        android:onClick="sendName"
+        android:text="proceed"
+        android:textColor="#512606"
+
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
